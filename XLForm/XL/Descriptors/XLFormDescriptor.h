@@ -58,7 +58,7 @@ typedef NS_OPTIONS(NSUInteger, XLFormRowNavigationOptions) {
 
 @property (weak, nullable) id<XLFormDescriptorDelegate> delegate;
 
--(instancetype)initWithTitle:(NSString *)title;
+-(nonnull instancetype)initWithTitle:(NSString *)title;
 +(nonnull instancetype)formDescriptor;
 +(nonnull instancetype)formDescriptorWithTitle:(nullable NSString *)title;
 
