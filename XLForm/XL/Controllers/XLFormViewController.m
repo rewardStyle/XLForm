@@ -599,7 +599,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     XLFormRowDescriptor * rowDescriptor = [self.form formRowAtIndex:indexPath];
-    return [rowDescriptor cellForFormController:self];
+    return [self updateFormRow:rowDescriptor];
 }
 
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
